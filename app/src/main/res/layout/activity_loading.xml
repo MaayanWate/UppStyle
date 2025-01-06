@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic_op"
+    >
+
+    <!-- Background with transparency -->
+    <!-- Overlay to provide semi-transparent background -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <!-- Flashed Background (above the transparent background) -->
+    <!-- View for flashing background animation -->
+    <View
+        android:id="@+id/flashingBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent" />
+
+    <!-- ImageView and TextView (Content) -->
+    <!-- Rotating circle image -->
+    <ImageView
+        android:id="@+id/rotatingCircleImageView"
+        android:layout_width="126dp"
+        android:layout_height="204dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/pic_op"
+        android:visibility="visible" />
+
+    <!-- Store name text -->
+    <TextView
+        android:id="@+id/storeNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rotatingCircleImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/opening_sentence"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:visibility="visible"
+        android:fontFamily="@font/libre_baskerville_bold"
+        />
+
+</RelativeLayout>

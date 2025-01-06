@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name" translatable="false">UppStyle</string>
+    <string name="opening_sentence">The place to pick up your style</string>
+    <string name="text_button_to_gallery">To Gallery with Fashion Items</string>
+    <string name="store_details">A fashionable clothing company that offers free home orders. For contact: 050-3345567</string>
+    <string name="add_cart">Add to cart</string>
+    <string name="change_quantity">Change Quantity</string>
+    <string name="Title">Title:</string>
+    <string name="Tag">Tag:</string>
+    <string name="Price">Price:</string>
+    <string name="Brand">Brand:</string>
+    <string name="text_button_to_payment_page">Proceed to payment:</string>
+    <string name="enter_name">Enter your name</string>
+    <string name="enter_id">Enter your id</string>
+    <string name="enter_card">Enter your card number</string>
+    <string name="text_button_to_pay">Click to pay</string>
+    <string name="text_button_back_to_checkout">Back to Checkout</string>
+    <string name="Loading">Loading.....</string>
+    <string name="end_sentence_1">Thank you for your order!</string>
+    <string name="end_sentence_2">The purchase process was successfully completed</string>
+    <string name="order_number">Order number: </string>
+    <string name="text_button_to_return_home">Return to Home Screen</string>
+</resources>

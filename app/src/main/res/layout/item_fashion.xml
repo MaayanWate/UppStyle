@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Root element: CardView for displaying item information with rounded corners and shadow -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="4dp"
+    android:background="@color/white">
+
+    <!-- Linear layout for organizing image and text vertically centered -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <!-- ImageView for displaying product image with specific styling -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerCrop"
+            android:background="@color/white"
+            android:src="@drawable/pic_op" />
+
+        <!-- Vertical LinearLayout for text information and interactive elements like Spinners and Buttons -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- TextView for displaying the product title -->
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title:"
+                android:textSize="16sp"
+                android:fontFamily="@font/libre_baskerville_regular"
+                android:layout_marginTop="8dp"/>
+
+            <!-- TextView for displaying the product tag -->
+            <TextView
+                android:id="@+id/tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tag:"
+                android:textSize="16sp"
+                android:fontFamily="@font/libre_baskerville_regular"
+                android:layout_marginTop="8dp"/>
+
+            <!-- TextView for displaying the product price -->
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price:"
+                android:textSize="16sp"
+                android:fontFamily="@font/libre_baskerville_regular"
+                android:layout_marginTop="8dp"/>
+
+            <!-- TextView for displaying the product brand -->
+            <TextView
+                android:id="@+id/brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brand:"
+                android:textSize="16sp"
+                android:fontFamily="@font/libre_baskerville_regular"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Spinner for selecting size -->
+            <Spinner
+                android:id="@+id/size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Spinner for selecting quantity -->
+            <Spinner
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Button for adding product to cart -->
+            <Button
+                android:id="@+id/cart_bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_cart"
+                android:fontFamily="@font/libre_baskerville_bold"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/material_dynamic_tertiary50"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

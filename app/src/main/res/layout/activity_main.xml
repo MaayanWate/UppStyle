@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pictop_3"
+    >
+
+    <!-- Title TextView centered horizontally and offset from the top -->
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UppStyle"
+        android:textSize="80sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="270dp"
+        android:fontFamily="@font/libre_baskerville_bold"
+        />
+
+    <!-- ImageView for an arrow, initially invisible, centered horizontally below the title -->
+    <ImageView
+        android:id="@+id/arrowImageView"
+        android:layout_width="59dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/textTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="157dp"
+        android:src="@drawable/pointer_11"
+        android:visibility="invisible" />
+
+    <!-- TextView for displaying company details at the bottom of the screen -->
+    <TextView
+        android:id="@+id/textCompanyDetails"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:background="@color/material_dynamic_tertiary50"
+        android:fontFamily="@font/libre_baskerville_regular"
+        android:gravity="center"
+        android:text="@string/store_details"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        />
+
+    <!-- Button to view the gallery, positioned above the company details text -->
+    <Button
+        android:id="@+id/btnViewGallery"
+        android:layout_width="332dp"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="91dp"
+        android:backgroundTint="@color/material_dynamic_tertiary50"
+        android:fontFamily="@font/libre_baskerville_regular"
+        android:onClick="@string/text_button_to_gallery"
+        android:text="@string/text_button_to_gallery"
+        android:textSize="16sp" />
+
+</RelativeLayout>

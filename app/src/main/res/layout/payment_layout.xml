@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TextInputLayouts for entering name, ID, card number, and card expiration date -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <!-- TextInputLayout for name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/enter_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- TextInputLayout for ID -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/enter_id">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/id"
+                android:layout_width="match_parent"
+                android:inputType="numberSigned"
+                android:layout_height="wrap_content"
+                android:textColor="#800080"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- TextInputLayout for card number -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/enter_card">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:inputType="numberSigned"
+                android:layout_height="wrap_content"
+                android:textColor="#800080"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Layout for card expiration date and CVV -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- TextInputLayout for expiration date -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="MM/YYYY">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/valid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- TextInputLayout for CVV -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:hint="CVV">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/cvv"
+                    android:layout_width="match_parent"
+                    android:inputType="numberSigned"
+                    android:layout_height="wrap_content"
+                    android:textColor="#808080"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Buttons for payment approval and returning to checkout -->
+        <Button
+            android:id="@+id/approve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/material_dynamic_tertiary50"
+            android:gravity="center"
+            android:text="@string/text_button_to_pay"
+            android:fontFamily="@font/libre_baskerville_bold"
+            android:textSize="14dp"/>
+
+        <Button
+            android:id="@+id/back_to_checkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/material_dynamic_tertiary50"
+            android:fontFamily="@font/libre_baskerville_bold"
+            android:text="@string/text_button_back_to_checkout"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <!-- ImageView displaying an image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:src="@drawable/pictop_3"
+        android:scaleType="fitXY" />
+
+</LinearLayout>

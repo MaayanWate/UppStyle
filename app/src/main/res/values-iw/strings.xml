@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">UppStyle</string>
+    <string name="opening_sentence">המקום שירים לך את הסטייל</string>
+    <string name="text_button_to_gallery">לגלריה עם פרטי אופנה</string>
+    <string name="store_details">חברת בגדים אופנתית המציעה הזמנות חינם עד הבית. ליצירת קשר: 050-3345567</string>
+    <string name="add_cart">להוסיף לעגלה</string>
+    <string name="change_quantity">שנה כמות</string>
+    <string name="Title">שם:</string>
+    <string name="Tag">תווית:</string>
+    <string name="Price">מחיר:</string>
+    <string name="Brand">מותג:</string>
+    <string name="text_button_to_payment_page">התקדם לתשלום:</string>
+    <string name="enter_name">יש להזין את שמך</string>
+    <string name="enter_id">יש להזין את תעודת הזהות שלך</string>
+    <string name="enter_card">יש להזין את מספר כרטיסך</string>
+    <string name="text_button_to_pay">ללחוץ לתשלום</string>
+    <string name="text_button_back_to_checkout">חזרה לקודם</string>
+    <string name="Loading">בטעינה....</string>
+    <string name="end_sentence_1">תודה על ההזמנה שלך!</string>
+    <string name="end_sentence_2">תהליך הרכישה הושלם בהצלחה</string>
+    <string name="order_number">מספר הזמנה: </string>
+    <string name="text_button_to_return_home">חזרה לדף הבית</string>
+</resources>

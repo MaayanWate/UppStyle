@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- CardView container for a single item, allowing for visual separation with elevation and rounded corners -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:orientation="horizontal"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="4dp">
+
+    <!-- Linear layout to organize content within the card horizontally -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:layout_height="wrap_content">
+
+        <!-- ImageView for displaying the product image with specific margins and cropping -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/pic_op" />
+
+        <!-- Nested LinearLayout for vertically organizing text descriptions -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- TextView for the title of the product -->
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title:"
+                android:textSize="16sp"
+                android:fontFamily="@font/libre_baskerville_bold"
+                android:layout_marginTop="8dp"/>
+
+            <!-- TextView for displaying product tags -->
+            <TextView
+                android:id="@+id/tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tag:"
+                android:textSize="16sp"
+                android:fontFamily="@font/libre_baskerville_bold"
+                android:layout_marginTop="8dp"/>
+
+            <!-- TextView for displaying product price -->
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price:"
+                android:textSize="16sp"
+                android:fontFamily="@font/libre_baskerville_bold"
+                android:layout_marginTop="8dp"/>
+
+            <!-- TextView for displaying product brand -->
+            <TextView
+                android:id="@+id/brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brand:"
+                android:textSize="16sp"
+                android:fontFamily="@font/libre_baskerville_bold"
+                android:layout_marginTop="8dp"/>
+
+            <!-- TextView for displaying product size -->
+            <TextView
+                android:id="@+id/size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Size:"
+                android:textSize="16sp"
+                android:fontFamily="@font/libre_baskerville_bold"
+                android:layout_marginTop="8dp"/>
+
+            <!-- TextView for displaying quantity available -->
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity:"
+                android:textSize="16sp"
+                android:fontFamily="@font/libre_baskerville_bold"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

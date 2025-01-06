@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Root element defining a RelativeLayout for the entire screen layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pictop_1">
+
+    <!-- FrameLayout to house the cart icon and notification bubble -->
+    <FrameLayout
+        android:id="@+id/cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp">
+
+        <!-- ImageView for displaying the shopping cart icon -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:padding="16dp"
+            android:src="@drawable/baseline_shopping_cart_24"
+            android:layout_height="wrap_content"/>
+
+        <!-- FrameLayout to position the notification bubble over the cart icon -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle"
+            android:layout_gravity="end"
+            android:padding="4dp">
+
+            <!-- TextView for displaying the item count in the cart -->
+            <TextView
+                android:id="@+id/counter"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:text="0"
+                android:layout_height="wrap_content"/>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <!-- ImageView to serve as a back button -->
+    <ImageView
+        android:id="@+id/backToStart"
+        android:layout_width="40dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/back_pic" />
+
+    <!-- RecyclerView for displaying a list of items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cart"
+        android:background="@color/white"/>
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pictop_3">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/invitationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:text="@string/end_sentence_1"
+            android:textColor="@color/white"
+            android:fontFamily="@font/libre_baskerville_bold"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/processCompletedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/end_sentence_2"
+            android:fontFamily="@font/libre_baskerville_bold"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp" />
+
+        <ImageView
+            android:id="@+id/animationImageView"
+            android:layout_width="114dp"
+            android:layout_height="87dp"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/vi_1" />
+
+        <TextView
+            android:id="@+id/orderNumberTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_number "
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/libre_baskerville_bold"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/libre_baskerville_bold"
+        android:text="@string/text_button_to_return_home"
+        android:textColor="@color/black" />
+</RelativeLayout>
