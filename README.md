@@ -63,3 +63,8 @@ UppStyle is a fashion showcase application that lets users explore a variety of 
 1. Clone this repository:
    ```bash
    git clone https://github.com/MaayanWate/UppStyle.git
+
+## Credits
+Developed by Maayan Wate.
+
+
